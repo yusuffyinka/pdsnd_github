@@ -1,12 +1,8 @@
->**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
-
-
 This project and the README file was created on the 22nd of September 2021
 
 Bicycle sharing service
 
-
-Over the years, Bicycle sharing system has been growing in number and popularities in cities around the world, this project is determined to analyze the bike sharing system in three major cities which are New-York City, Washington DC and Chicago, and ask the following Questions
+Over the years, Bicycle sharing system has been growing in number and popularities in cities around the world, this project is determined to analyze the bike sharing system in three major cities around the world which are New-York City, Washington DC and Chicago, and ask the following Questions:
 
 * What is the most common day of the week traveled in across the three states
 * What is the most common Start Station in Chicago
@@ -23,7 +19,7 @@ and also column peculiar to Chicago and New-York alone which are
 * Gender
 * Birth Year
 
-The files used are included chicago.csv, new-york-city.csv and washington.csv
+The files used in this project are chicago.csv, new-york-city.csv and washington.csv
 
 
 A heart felt credit goes to the Udacity Team, the unrelenting and positive Mentors and all Instructors.
