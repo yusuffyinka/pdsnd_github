@@ -43,7 +43,6 @@ table(day_all)
 #The graph shows that the most traveled day in New-York City is Wednesday with a total travel is 52087, and Wednesday in Washington with a total travel of 48156 and Tuesday in Chicago with total travel is 45912.#
 
 
-
 #Question 2
 #What is the most common Start Station in Chicago
 
@@ -61,8 +60,6 @@ qplot(x=chi_start_station, y= Freq, data=station_plot_5, color=I('Black'),fill=I
 ggtitle("Scattered plot of Chicago top 5 Station") +
 labs(x = "Stations")+
 labs(y = "Frequency")
-
-
 
 
 #Question 3
