@@ -4,17 +4,14 @@ library(ggplot2)
 library(tidyverse)
 library(lubridate)
 
-
 #Read your file into their respective variable
 
 ny = read.csv('new-york-city.csv')
 wash = read.csv('washington.csv')
 chi = read.csv('chicago.csv')
 
-
 #Question 1
 #What is the most common day of the week traveled in across the three states
-
 
 #Extract the weekday from the Start.Time
 wash1 <- mutate(wash, weekday = (weekdays(as.POSIXlt (wash$Start.Time))))
@@ -32,20 +29,17 @@ ny.day <- ny$Weekday
 wash$Weekday <- format(as.Date(wash$Start.Time), "%A")
 wash.day <- wash$Weekday
 
-
 #visualize the result
 
 ggplot(data = day_all, aes(weekday)) + geom_bar(aes(fill = state), position = "dodge")
 
 table(day_all)
 
-
 #The graph shows that the most traveled day in New-York City is Wednesday with a total travel is 52087, and Wednesday in Washington with a total travel of 48156 and Tuesday in Chicago with total travel is 45912.#
 
 
 #Question 2
 #What is the most common Start Station in Chicago
-
 
 chi_start_station <- (chi$Start.Station)
 stations <- table(chi_start_station) %>%
@@ -68,9 +62,8 @@ labs(y = "Frequency")
 wash_User.Type <- table(wash$User.Type) %>%
   as.data.frame()
 ggplot(wash, aes(User.Type))+
-  geom_histogram(stat = "count", binwidth=30) +
+  geom_histogram(stat = "count", binwidth=30, fill='red', color='blue') +
   ggtitle("Gragh of User type in Washington")
-
 wash_User.Type
 
 
