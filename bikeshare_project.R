@@ -71,7 +71,7 @@ labs(y = "Frequency")
 wash_User.Type <- table(wash$User.Type) %>%
   as.data.frame()
 ggplot(wash, aes(User.Type))+
-  geom_histogram(stat = "count", binwidth=30) +
+  geom_histogram(stat = "count", binwidth=30, fill='red', color='blue') +
   ggtitle("Gragh of User type in Washington")
 
 wash_User.Type
